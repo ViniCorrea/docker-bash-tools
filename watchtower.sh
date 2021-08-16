@@ -1,4 +1,18 @@
 #!/bin/bash
+#
+# Script Name: watchtower.sh
+#
+# Author: Vinicius Fontoura Correa
+# Date : 2021-08-15
+#
+# Description: Monitor a Docker container and watch changes to the image that those container image
+#               that those container was originally started from.
+#               If detect that the image has changed, it will restart the container
+#               using the new image.
+#
+# Run Information: Is a good idea do a cron to execute this script
+
+
 set -e
 
 ############################################################
